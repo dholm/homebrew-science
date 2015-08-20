@@ -66,6 +66,7 @@ class R < Formula
 
     args = [
       "--prefix=#{prefix}",
+      "--libdir=#{lib}",
       "--with-libintl-prefix=#{Formula["gettext"].opt_prefix}",
       "--enable-memory-profiling",
     ]
