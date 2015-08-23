@@ -20,6 +20,7 @@ class Hwloc < Formula
 
   depends_on "pkg-config" => :build
   depends_on "cairo" => :optional
+  depends_on :x11
 
   def install
     system "./autogen.sh" if build.head?
